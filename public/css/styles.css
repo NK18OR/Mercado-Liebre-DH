@@ -1,0 +1,116 @@
+body{
+    font-family: 'roboto', sans-serif;
+    background-color: #ebebeb;
+    font-size: 12px;
+    margin: 0px;
+}
+header{
+    background-color: #EAC926;
+    background-size: 100%;
+}
+footer{
+    text-align: center;
+    background-color: white;
+}
+main{
+    width: 90vw;
+    margin: auto;
+}
+.logo{
+   width: 40%;
+}
+.titulares{
+    font-size: 24px;
+    color: #666;
+}
+.precios{
+    font-size: 18px;
+    margin: 0%;
+}
+.descuentos{
+    font-size: 16px;
+    color: #39b54a;
+    margin-top: 0%;
+}
+.descripciones{
+    font-size: 16px;
+    color: #666;
+}
+a{
+    text-decoration:none;
+}
+li{
+    list-style:none;
+}
+ul{
+    padding: 0;
+}
+.centro{
+    text-align: center;
+}
+.hamburguesa{
+    background-color: #03264C;
+    color: white;
+    font-size: 2em;
+    padding: 2mm;
+    width: 25px;
+    height: 25px;
+    margin: auto;
+    text-align: center;
+    border-radius: 20%;
+}
+.iconos{
+    font-size: 2em;
+    color:#03264C;
+}
+.banner{
+    width: 100%;
+}
+.imagenes{
+    width: 100%;
+}
+article{
+    margin: auto;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: 40vw;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.caja{
+    border-top: solid 1px #ebebeb;
+    background-color: white;
+    padding: 15px;
+    display: none;
+}
+.camioncolor{
+    color: #39b54a;
+    padding: 10px;
+    width: 10px;
+    height: 10px;
+    border: solid 1px #39b54a;
+    border-radius: 50%;
+}
+nav{
+    display: none;
+}
+.centrado{
+    text-align: center;
+    padding: 15px;
+}
+
+@media (min-width: 361px){
+    .caja{
+   display: block;
+    }
+    nav{ display: block;
+    }
+    .hamburguesa{
+        display: none;
+    }
+    .centrado{
+        text-align: left;
+    }
+}
+@media (min-width: 769px){
+  
+}
