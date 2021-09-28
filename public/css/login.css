@@ -4,97 +4,62 @@ body{
     font-size: 12px;
     margin: 0px;
 }
-
-
 header{
     background-color: #EAC926;
     background-size: 100%;
     display: flex;
     flex-direction: column;
 }
-
-
 footer{
     text-align: center;
     background-color: white;
 }
-
-
 .flexible{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-
-
 main{
     width: 90vw;
     margin: auto;
 }
-
-
-form{
-    display: flex;
-}
-
-
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     }
-
-
 .titulares{
     font-size: 24px;
     color: #666;
 }
-
-
 .precios{
     font-size: 18px;
     margin: 0%;
     flex-grow: 30;
 
 }
-
-
 .descuentos{
     font-size: 16px;
     color: #39b54a;
     margin-top: 0%;
     flex-grow: 70;
 }
-
-
 .descripciones{
-    color: #666;
     font-size: 16px;
-    padding: 15px;
-    font-weight: bold;
+    color: #666;
 }
-
-
 a{
     text-decoration:none;
 }
-
-
 li{
     list-style:none;
 }
-
-
 ul{
     padding: 0;
 }
-
-
 .centro{
     text-align: center;
 }
-
-
 .hamburguesa{
     background-color: #1259c3;
     color: white;
@@ -106,32 +71,23 @@ ul{
     text-align: center;
     border-radius: 15%;
 }
-
-
 .iconos{
     font-size: 2em;
     color:#1259c3;
 }
-
 .iconos:hover{
     color: #31f73f;
 }
-
 .banner{
     width: 100%;
 }
-
-
 img{
     width: 100%;
 }
 
-
-article{
-    width: 100%;
-    background-color: white;
-    margin-top: 15px;
-    margin-bottom: 15px;
+strong{
+    display: block;
+    padding: 15px;
 }
 .caja{
     border-top: solid 1px #ebebeb;
@@ -140,8 +96,6 @@ article{
     position: relative;
     flex-wrap: wrap;
 }
-
-
 .camioncolor{
     color: #39b54a;
     padding: 10px;
@@ -149,26 +103,6 @@ article{
     height: 10px;
     order: 1;
 }
-
-
-main section article i{
-    display: block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    top: -15px;
-}
-section{
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
 nav{
     display: none;
 }
@@ -180,6 +114,7 @@ nav{
     margin-right: 15px;
     margin-bottom: 15px;
 }
+
 #buscador{
     width: 100%;
     padding: 10px 30px 10px 10px;
@@ -198,14 +133,45 @@ nav{
 header div img{
     padding: 10px;
 }
-
-
 header div input{
     width: 100%;
     border-radius: 5px 0px 0px 5px;
     border: none;
 }
+main form{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 15px;
 
+}
+main form p{
+    padding: 15px;
+    width: 100%;
+}
+main form p input{
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    width: 100%;
+}
+h2{
+    display: flex;
+    padding-left: 15px;
+}
+.perfil{
+    height: 15px;
+    width: 15px;
+}
+.int{
+    height: 13px;
+    width: 13px;
+}
+
+.boton:hover{
+    background-color: #0022AA;
+    color: white;
+}
 
 @media (min-width: 426px){
     .caja{
@@ -255,46 +221,8 @@ header div input{
 
 }
 @media (min-width: 769px){
-    article{
+  article{
       width: 23%;
-    }
+  }
 
-    article:hover{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-
-    .descripciones{
-        position: relative;
-        bottom: 50px;
-        z-index: -1;
-    }
-
-    section article:hover .descripciones {
-        position: relative;
-        bottom: 0px;
-        z-index: 1;
-    }
-
-    .camioncito{
-        transform: rotatez(0deg);
-    }
-
-    .camioncito{
-        transition: 0.5s;
-    }
-
-    .camioncito:hover{
-        transform: rotatez(-90deg);
-    }
-    footer{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .iconosMasTexto{
-        width: 33%;
-        padding: 10px;
-    }
-    .copyR{
-        padding: 10px;
-    }
 }
