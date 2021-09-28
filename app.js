@@ -17,4 +17,4 @@ app.get("/login", (req, res)=> {
     const archivoAEnviar = path.join(__dirname, "/views/login.html")
     res.sendFile(archivoAEnviar)
 })
-app.listen(3055, () => console.log( "Levantando un servidor con Express","http://localhost:3055/"));
+app.listen(process.env.PORT || 3055, () => console.log( "Levantando un servidor con Express","http://localhost:3055/"));
